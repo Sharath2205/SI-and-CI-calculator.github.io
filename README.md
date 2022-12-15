@@ -3,4 +3,4 @@
 A fully responsive website which can calculate Simple interest and Compound interest
 
 
-##try live demo here -
+## try live demo here -
