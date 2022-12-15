@@ -4,3 +4,4 @@ A fully responsive website which can calculate Simple interest and Compound inte
 
 
 ## try live demo here -
+https://sharath2205.github.io/SI-and-CI-calculator.github.io/
