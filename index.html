@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple interest and compound interest calculator</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="menu">
+        <div class="menu-item active" id="si">Simple Interest</div>
+        <div class="menu-item" id="ci">Compound Interest</div>
+      </div>
+
+      <!-- inputs -->
+      <div class="form">
+        <div class="input-grp">
+          <label for="pa"
+            >Principle Amount<span class="required"> *</span></label
+          >
+          <input type="text" id="pa" placeholder="ex: 1000" />
+        </div>
+        <div class="input-grp">
+          <label for="ir"
+            >Interest rate (in %)<span class="required"> *</span></label
+          >
+          <input type="text" id="ir" placeholder="ex: 10" />
+        </div>
+        <div class="input-grp">
+          <label for="diy"
+            >Duration (in year)<span class="required"> *</span></label
+          >
+          <input type="text" id="diy" placeholder="ex: 1" />
+        </div>
+        <div class="input-grp cf" id="cfreq">
+          <label for="cf"
+            >Compounding frequency (in year)<span class="required">
+              *</span
+            ></label
+          >
+          <input type="text" id="cf" placeholder="ex: 3" />
+        </div>
+      </div>
+
+      <div class="btn">
+        <button id="calculate">Calculate</button>
+      </div>
+
+      <div class="result">
+        <p>Total Amount:</p>
+        <span id="result">100000</span>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
