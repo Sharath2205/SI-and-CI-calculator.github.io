@@ -47,6 +47,8 @@ calculateEl.addEventListener("click", () => {
   let p = paEl.value;
   let r = irEl.value;
   let t = diyEl.value;
+  
+  r /= 100;
 
   if (isNaN(p) || isNaN(r) || isNaN(t)) {
     alert("All values must be numeric only");
@@ -68,7 +70,6 @@ calculateEl.addEventListener("click", () => {
         alert("Enter all values");
         reset();
       } else {
-        r /= 100;
         let result = parseFloat(p * Math.pow(1 + r / n, n * t)).toFixed(2);
         resultEl.style.display = "block";
         document.getElementById("result").innerText = result;
